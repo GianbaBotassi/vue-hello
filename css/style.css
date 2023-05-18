@@ -1,0 +1,12 @@
+/* General styles */
+
+
+/* Site sections */
+.container{
+    height: 100vh;
+}
+#cont{
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+}
