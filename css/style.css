@@ -1,5 +1,8 @@
 /* General styles */
-
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
 
 /* Site sections */
 .container{
@@ -9,4 +12,21 @@
     background-color: aquamarine;
     width: 50%;
     height: 50%;
+}
+#cont_img{
+    width: 100%;
+    height: 300px;
+    padding:30px;
+}
+#cont_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+p{
+    padding: 50px;
+    font-size: 1.5rem;
+}
+.none{
+    display: none;
 }
