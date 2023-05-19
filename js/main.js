@@ -5,6 +5,8 @@
 
 const { createApp } = Vue
 
+let state = false;
+
   createApp({
     data() {
       return {
@@ -12,18 +14,15 @@ const { createApp } = Vue
         message: 'If you are ready to fight, click the blue bottom!',
         button :'Click me',
         img: 'img/vue_js_vs._react_js.png',
-        classeImg: 'none',
-        classeP: ''
+        state : false
       }
     },
     methods: {
         changeImg : function(){
-            if(this.classeImg === 'none' && this.classeP === ''){
-                this.classeImg = '';
-                this.classeP = 'none'
+            if(this.state === false){
+              this.state = true;
             }else{
-                this.classeImg = 'none';
-                this.classeP = ''
+                this.state = false;
             }
         }
       }

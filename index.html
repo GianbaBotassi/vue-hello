@@ -23,8 +23,8 @@
 
                 <button class="btn btn-primary" @click="changeImg">{{button}}</button>
                 <div id="cont_img" class="d-flex justify-content-center">
-                    <p :class="classeP">{{message}}</p>
-                    <img :class="classeImg" :src="img" alt="Vue vs React">
+                    <img v-if="state" :src="img" alt="Vue vs React">
+                    <p v-else="state">{{message}}</p>
                 </div>
             </div>
         </div>        
